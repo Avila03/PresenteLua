@@ -1,0 +1,64 @@
+/* botar imagem */
+body{
+    background-image : url('imagesa.jpg');
+    background-size: 100% 100%, contain, 1em;
+
+    }
+
+
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto; 
+    width: 0px; 
+    /* Para ver as bordas do formulário */
+     padding: 5em;
+    border: 0px solid #CCC;
+    border-radius: 5em;
+} */
+
+
+form div + div {
+    margin-top: 5em;
+}
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 10px;
+    text-align: top;
+}
+input, textarea {
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 2em sans-serif;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    /* largura */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 4px solid rgb(8, 6, 6);
+}
+input:focus, textarea:focus {
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: rgb(0, 0, 0);
+}
+textarea {
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+
+    /* tamanho do espaço pra escrever */
+    height: 1em;
+
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize: horizontal;
+}
+.button {
+    /* Para posicionar os botões para a mesma posição dos campos de texto */
+    padding-left: 10px; /* mesmo tamanho que os elementos do tipo label */
+}
+ button { 
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+     margin-left: .2em; 
+ } 
+
